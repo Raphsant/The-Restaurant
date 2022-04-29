@@ -1,0 +1,35 @@
+#menu__container{
+    margin: 1rem;
+}
+
+#title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    color: #C65D7B;
+}
+#title__heading{
+    font-size: 4rem;
+}
+
+hr{
+    width: 60%;
+    background-color: #874356;
+}
+
+#menu__list--ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.menu__list--item{
+    margin: 1rem;
+}
+
+.menu__list--subtext{
+    font-style: italic;
+}

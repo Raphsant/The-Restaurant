@@ -1,0 +1,25 @@
+#navbar{
+    width: 100vw;
+    background-color: #C65D7B;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+}
+#navbar__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+.navbar__list--item{
+    background-color: #F68989;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #F6E7D8;
+    font-size: 1.3rem;
+}
