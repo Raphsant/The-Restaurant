@@ -1,19 +1,16 @@
 #navbar{
-    width: 100vw;
+    width: 100%;
     background-color: #C65D7B;
-    height: 4rem;
     position: fixed;
     bottom: 0;
+    padding: 1rem;
 }
 #navbar__list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    max-width: calc(var(--max-width) / 2);
+    margin: 0 auto;
 }
 
 .navbar__list--item{
@@ -22,4 +19,6 @@
     border-radius: 5px;
     color: #F6E7D8;
     font-size: 1.3rem;
+    display: grid;
+    place-items: center;
 }
