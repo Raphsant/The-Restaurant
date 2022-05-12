@@ -1,0 +1,20 @@
+#quest-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+#quest-text__title {
+  color: #ebf7fc;
+  font-size: 1.5rem;
+}
+#quest-text__subtext {
+  color: #ebf7fc;
+  text-align: center;
+}
+#quest-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

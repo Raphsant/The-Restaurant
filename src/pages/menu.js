@@ -1,10 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
+import Logo from "../img/catacumbias-logo.png";
+import Snake from "../img/snake.png";
 import "../styles/menu.css";
 const Menu = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  function openModal() {
+    setIsModalOpen(true);
+  }
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      backgroundColor: "#000000",
+      color: "#453CE8",
+    },
+  };
+
   return (
     <div id={"menu__container"}>
-      <div id={"title__container"}>
-        <h1 id={"title__heading"}>Catacumbias</h1>
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+      >
+        <p>
+          Located in the <span style={{ color: "#FF3366" }}>916</span> Building,
+          room 111
+        </p>
+        <p style={{ textAlign: "center" }}>
+          Made by the <span style={{ color: "#E7E258" }}>IAM Team SP2022</span>
+        </p>
+      </Modal>
+      <div id={"title__container"} onClick={openModal}>
+        <img src={Snake} alt="" id="sub-logo" />
+        <img id="logo" src={Logo} alt="" />
       </div>
       <div id="menu__list">
         <ul id={"menu__list--ul"}>
